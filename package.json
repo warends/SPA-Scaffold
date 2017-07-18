@@ -1,0 +1,28 @@
+{
+  "name": "Icertis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8"
+  },
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
+  },
+  "author": "Will Arends",
+  "license": "ISC"
+}

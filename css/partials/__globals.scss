@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#content{
+    height: 100%; //1920px
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.padded-vert {
+    padding: 40px 0;
+    @include mq($S){
+        padding: 80px 0;
+    }
+}
+.padded-top{
+    padding-top: 40px;
+    @include mq($S){
+        padding-top: 80px;
+    }
+}
+.padded-bottom{
+    padding-bottom: 40px;
+    @include mq($S){
+        padding-bottom: 80px;
+    }
+}
+.vert-align{
+    @include vertical-align;
+}
