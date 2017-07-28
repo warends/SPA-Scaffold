@@ -10,22 +10,19 @@ var router = (() => {
 
             $(this).load(pageString, function (res, status, xhr) {
                 $(_this).fadeIn('800', function () {
-                    if (pageString == './views/crack-code.html') {
-                        console.log('safe screen');
-                        code.initBtns();
-                    }
+                    console.log(this);
                 });
             });
         });
     }
 
     //request with vanilla JS
-    function getPage(method, url, done) {
-        var pageString = './views/' + utl + '.html';
+    function getPage(method, url) {
+        var pageString = './views/' + url + '.html';
         return new Promise((resolve, reject) => {
             var xhr = new XMLHttpRequest();
             xhr.open(method, pageString);
-            xhr.onload = () => {
+            xhr.onload = function() {
                 if(this.status >= 200 && this.status < 300){
                     resolve(xhr.response);
                 } else {
@@ -35,7 +32,7 @@ var router = (() => {
                     });
                 }
             };
-            xhr.onerror = () => {
+            xhr.onerror = function() {
                 reject({
                     status: this.status,
                     statusText: xhr.statusText

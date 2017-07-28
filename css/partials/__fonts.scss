@@ -1,21 +1,21 @@
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('./fonts/Gotham-Medium.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gotham-Bold';
-    src: url('./fonts/Gotham-Bold.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-$gotham: 'Gotham', arial, sans-serif;
-$gothamBold: 'Gotham-Bold', arial, sans-serif;
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('./fonts/Gotham-Medium.otf') format("opentype");
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Gotham-Bold';
+//     src: url('./fonts/Gotham-Bold.otf') format("opentype");
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// $gotham: 'Gotham', arial, sans-serif;
+// $gothamBold: 'Gotham-Bold', arial, sans-serif;
 body, html {
-    font-family: $gotham;
+    //font-family: $gotham;
 }
 p, a {
     font-size: 18px;
@@ -24,6 +24,6 @@ p, a {
     line-height: 30px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: $gothamBold;
+    //font-family: $gothamBold;
     margin: 0;
 }

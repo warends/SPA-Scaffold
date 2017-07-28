@@ -74,4 +74,4 @@ gulp.task('prod-serve', function(){
 	})
 });
 
-gulp.task('start', ['serve','watch', 'html', 'js', 'images']);
+gulp.task('start', ['serve','watch']);
